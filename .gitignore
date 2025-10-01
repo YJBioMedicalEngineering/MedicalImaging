@@ -416,3 +416,41 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# ── Medical data & models (DO NOT COMMIT) ───────────────────────────────
+data/**
+datasets/**
+raw_data/**
+intermediate/**
+export/**
+!data/README.md
+!datasets/README.md
+
+# 의료 포맷
+*.dcm
+*.ima
+*.nii
+*.nii.gz
+*.nrrd
+*.mha
+*.mhd
+*.hdr
+*.img
+
+# 모델/엔진
+checkpoints/**
+models/**
+!models/README.md
+*.pt
+*.pth
+*.onnx
+*.engine
+*.plan
+*.trt
+
+# DirectX shader binaries
+*.cso
+*.pso
+*.aso
+Shaders/Compiled/
+
